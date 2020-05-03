@@ -1,13 +1,16 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+
+import style from './book.module.css'
 import { addBook , buyBook } from '../../redux/book/bookAction'
+
 
 class Book extends Component {
   render() {
     return (
-      <div>
+      <div className={style.container}>
         <h2>Number of Books - {this.props.numOfBooks}</h2>
-        <div>
+        <div className={style.button}>
           <button onClick={() => {this.props.addBook()}}>Add Book</button>
           <button onClick={() => {this.props.buyBook()}}>Buy Book</button>
         </div>
