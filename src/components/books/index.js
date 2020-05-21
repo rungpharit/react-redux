@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-
 import style from './book.module.css'
 import { addBook , buyBook } from '../../redux/book/bookAction'
-
 
 class Book extends Component {
   render() {
@@ -21,7 +19,7 @@ class Book extends Component {
 
 const mapStateToProps = state => {
   return {
-    numOfBooks:state.numOfBooks
+    numOfBooks:state.book.numOfBooks
   }
 }
 

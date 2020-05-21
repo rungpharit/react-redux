@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import style from './pen.module.css'
 import { addPen , buyPen } from '../../redux/pen/penAction'
+
 class Pen extends Component {
   render() {
     return (
@@ -18,7 +19,7 @@ class Pen extends Component {
 
 const mapStateToProps = state => {
   return {
-    numOfPens:state.numOfPens
+    numOfPens:state.pen.numOfPens
   }
 }
 

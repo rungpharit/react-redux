@@ -6,12 +6,12 @@ const initialState = {
 
 function penReducer( state = initialState , action ){
   switch(action.type){
-    case penTypes.ADD_Pen:
+    case penTypes.ADD_PEN:
       return {
         ...state,
         numOfPens:state.numOfPens + 1
       };
-    case penTypes.BUY_Pen:
+    case penTypes.BUY_PEN:
       return {
         ...state,
         numOfPens:state.numOfPens - 1
